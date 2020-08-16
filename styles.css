@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+    --blue-circle: rgb(52, 87, 178, 0.1);
+    --pink-circle: rgb(188, 58, 128, 0.1);
+}
+
+/* width */
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #2F303A;
+    color: #ECECEC;
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: inherit;
+}
+
+.subtitle {
+    font-size: 0.9em;
+    margin-bottom: 2em;
+}
+
+.sidebar {
+    max-width: 23vw;
+    background-color: #1F4068;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    border-radius: 0 1.5rem 1.5rem 0;
+    padding: 1.5em 2em;
+    align-items: center;
+}
+
+.sidebar .profile-image-section {
+    background: url(./assets/images/profile-photo.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: 0.1em solid #ECECEC;
+}
+
+.sidebar .my-name {
+    margin-top: 1em;
+    font-size: 1.35em;
+}
+
+.sidebar .profile-description {
+    margin-top: 0.5em;
+    font-size: 0.75em
+}
+
+.sidebar .social-icons-section {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.icon {
+    color: #ECECEC;
+    font-size: 1.7em;
+}
+
+.sidebar .sidebar-title {
+    font-size: 0.9em;
+    display: flex;
+    width: 100%;
+    margin-top: .9em;
+    border-bottom: 1px solid #ececec2f
+}
+
+.sidebar .skills-tools-section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 0.3em;
+}
+
+.sidebar .skill,
+.sidebar .tool {
+    padding: 0.1em 1em;
+    background-color: #405D7F;
+    border-radius: 0.4em;
+    margin: 0.25em;
+    font-size: 0.8em;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-grow: 1;
+}
+
+.header {
+    max-width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    align-items: flex-end;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-right: 2em;
+}
+
+.main-nav li:last-of-type {
+    margin-right: 0;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav li a:hover {
+    color: #cdcdcd;
+}
+
+.main-nav li a:active,
+.main-nav .active {
+    border-bottom: 1px solid red;
+}
+
+
+/* Background Circles */
+.bg-circle-1 {
+    position: fixed;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: var(--blue-circle);
+    bottom: 0;
+    right: 0;
+    transform: translate(30%, 30%);
+    z-index: -1;
+}
+
+.bg-circle-2 {
+    position: fixed;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: var(--pink-circle);
+    bottom: 0;
+    right: 6vw;
+    transform: translateY(35%);
+    z-index: -1;
+}
+
+.bg-circle-3 {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: var(--blue-circle);
+    bottom: 2vw;
+    right: 14vw;
+    z-index: -1;
+}
+
+.bg-circle-4 {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: var(--pink-circle);
+    top: 15vh;
+    left: 50vw;
+    z-index: -1;
+}
+
+.bg-circle-5 {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: var(--blue-circle);
+    top: 13vh;
+    left: 55vw;
+    z-index: -1;
+}
+
+.bg-circle-6 {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: var(--pink-circle);
+    top: 16vh;
+    left: 59vw;
+    z-index: -1;
+}
+
+.bg-circle-7 {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: var(--blue-circle);
+    bottom: 3vh;
+    left: 25vw;
+    z-index: -1;
+}
+
+.bg-circle-8 {
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    background-color: var(--pink-circle);
+    bottom: 6vh;
+    left: 26vw;
+    z-index: -1;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        max-width: 100%;
+        flex-grow: unset;
+        border-radius: 0;
+    }
+
+    .sidebar .social-icons-section {
+        width: 30%
+    }
+
+    .sidebar .profile-image-section {
+        display: flex;
+    }
+}
+
+@media (max-width: 800px) {
+    .sidebar .social-icons-section {
+        width: 40%
+    }
+}
+
+@media (max-width: 700px) {
+    .sidebar .social-icons-section {
+        width: 50%
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar .social-icons-section {
+        width: 60%
+    }
+}
+
+@media (max-width: 500px) {
+    .sidebar .social-icons-section {
+        width: 70%
+    }
+}
+
+
+@media (max-width: 400px) {
+    .sidebar .social-icons-section {
+        width: 80%
+    }
+}
+
+@media (max-width: 300px) {
+    .sidebar .social-icons-section {
+        width: 90%
+    }
+}

@@ -1,0 +1,25 @@
+.about-me-section {
+    flex-grow: 1;
+    max-width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    margin-top: 3em;
+}
+
+.button-section {
+    margin-top: 3em;
+}
+
+
+.btn {
+    padding: 0.5em 2em;
+    background: #ECECEC;
+    text-decoration: none;
+    color: #2F303A;
+    border-radius: 0.5em;
+    font-weight: 500;
+}
