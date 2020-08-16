@@ -85,4 +85,15 @@
     .vertical-train {
         width: 6vw;
     }
+
+    .journey-section .title,
+    .journey-section .subtitle {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .journey-section .subtitle {
+        margin-bottom: 3em;
+    }
 }
