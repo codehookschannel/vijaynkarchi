@@ -23,3 +23,17 @@
     border-radius: 0.5em;
     font-weight: 500;
 }
+
+@media (max-width: 900px) {
+    .about-me-section {
+        max-width: 90vw;
+        font-size: 0.75em;
+    }
+
+    .button-section,
+    .about-me-section .title {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+}

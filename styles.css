@@ -262,6 +262,13 @@ body {
     .sidebar .profile-image-section {
         display: flex;
     }
+
+    .header {
+        max-width: 90vw;
+        align-items: center;
+        width: 90vw;
+        font-size: 0.75em;
+    }
 }
 
 @media (max-width: 800px) {
