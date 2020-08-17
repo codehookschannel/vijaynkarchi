@@ -22,7 +22,7 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -30,12 +30,13 @@ body {
 .title {
     font-size: 1.5em;
     font-weight: 500;
-    color: inherit;
+    color: #ffc800;
 }
 
 .subtitle {
     font-size: 0.9em;
     margin-bottom: 2em;
+    color: #f9dd76d1;
 }
 
 .sidebar {
@@ -85,7 +86,7 @@ body {
     font-size: 1.7em;
 }
 
-.sidebar .sidebar-title {
+.sidebar-title {
     font-size: 0.9em;
     display: flex;
     width: 100%;
@@ -93,20 +94,20 @@ body {
     border-bottom: 1px solid #ececec2f
 }
 
-.sidebar .skills-tools-section {
+.skills-tools-section {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     margin-top: 0.3em;
 }
 
-.sidebar .skill,
-.sidebar .tool {
+.skill,
+.tool {
     padding: 0.1em 1em;
     background-color: #405D7F;
     border-radius: 0.4em;
     margin: 0.25em;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .content-section {

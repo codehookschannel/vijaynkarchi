@@ -1,0 +1,69 @@
+.work-gallery-section {
+    flex-grow: 1;
+    max-width: 65vw;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.currently-working-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
+
+.project-name {
+    font-size: 0.7em;
+}
+
+.image-section {
+    width: 50%;
+    padding-right: 1.5em;
+}
+
+.project-info {
+    width: 50%
+}
+
+.project-info .content{
+    font-size: 0.8em;
+    text-align: justify;
+}
+.resources ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.4em;
+    padding-inline-start: 20px;
+}
+
+.resources li {
+    font-size: 0.8em;
+}
+
+.title {
+    margin-top: 0.5em;
+    border-bottom: 1px solid #f9dd76d1;
+}
+
+.completed {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.completed-work-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.completed-work {
+    width: 49%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+}
