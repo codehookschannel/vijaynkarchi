@@ -27,12 +27,13 @@
     width: 3vw;
     height: 3vw;
     border-radius: 50%;
-    background-color: #405d7f;
+    background-color: #f9dd7691;
     font-weight: 900;
+    color: black;
 }
 
 .line {
-    border-left: 4px solid #405d7f;
+    border-left: 4px solid #f9dd7691;
     flex-grow: 1;
 }
 
@@ -48,7 +49,8 @@
 }
 
 .company-name {
-    font-size: 0.9em;
+    font-size: 1em;
+    margin-bottom: 0;
 }
 
 .responsibility {

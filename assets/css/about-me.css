@@ -27,7 +27,7 @@
 @media (max-width: 900px) {
     .about-me-section {
         max-width: 90vw;
-        font-size: 0.65em;
+        /* font-size: 0.65em; */
     }
 
     .button-section,

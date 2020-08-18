@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&family=Pangolin&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -16,8 +18,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: #2F303A;
-    color: #ECECEC;
-    font-family: Poppins, sans-serif;
+    color: lightgray;
+    font-family: 'Baloo Tamma 2', sans-serif;
 }
 
 .container {
@@ -27,16 +29,22 @@ body {
     margin: 0 auto;
 }
 
-.title {
+.title,
+.my-name  {
     font-size: 1.5em;
     font-weight: 500;
     color: #ffc800;
 }
 
-.subtitle {
-    font-size: 0.9em;
+.subtitle,
+.profile-description {
+    font-size: 1.3em;
     margin-bottom: 2em;
     color: #f9dd76d1;
+}
+
+.profile-description {
+    font-size: 0.9em;
 }
 
 .sidebar {
@@ -61,37 +69,25 @@ body {
     border: 0.1em solid #ECECEC;
 }
 
-.sidebar .my-name {
-    margin-top: 1em;
-    font-size: 1.35em;
-}
-
-.sidebar .profile-description {
-    margin-top: 0.5em;
-    font-size: 0.75em
-}
-
 .sidebar .social-icons-section {
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 1em;
+    width: 75%;
 }
 
 .icon {
-    color: #ECECEC;
-    font-size: 1.7em;
+    color: #f9dd76d1;
+    font-size: 1.5em;
 }
 
 .sidebar-title {
-    font-size: 0.9em;
     display: flex;
     width: 100%;
     margin-top: .9em;
-    border-bottom: 1px solid #ececec2f
+    border-bottom: 0.0001rem  solid #f9dd76d1;
+    color: #ffc800;
 }
 
 .skills-tools-section {
@@ -103,11 +99,15 @@ body {
 
 .skill,
 .tool {
-    padding: 0.1em 1em;
-    background-color: #405D7F;
-    border-radius: 0.4em;
-    margin: 0.25em;
+    display: flex;
+    align-items: center;
+    padding: 0.2em 1em 0 1em;
+    background-color: #43618365;
+    border-radius: 0.7em;
+    margin: 0.25em 0.5em 0.25em 0;
     font-size: 0.7em;
+    color: #ECECEC;
+    letter-spacing: 1px;
 }
 
 .content-section {
@@ -269,7 +269,7 @@ body {
         max-width: 90vw;
         align-items: center;
         width: 90vw;
-        font-size: 0.5em;
+        /* font-size: 0.5em; */
         height: 70px;
         justify-content: center;
     }

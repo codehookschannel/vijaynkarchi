@@ -17,32 +17,19 @@
     font-size: 0.7em;
 }
 
-.image-section {
-    width: 50%;
-    padding-right: 1.5em;
-}
-
-.project-info {
-    width: 50%
-}
-
 .project-info .content{
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     text-align: justify;
 }
+
 .resources ul {
     display: flex;
     justify-content: space-between;
-    margin-top: 0.4em;
+    margin-top: 0.1em;
     padding-inline-start: 20px;
 }
 
-.resources li {
-    font-size: 0.8em;
-}
-
 .title {
-    margin-top: 0.5em;
     border-bottom: 1px solid #f9dd76d1;
 }
 
@@ -51,6 +38,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
+    margin-top: 1.5em;
 }
 
 .completed-work-section {
@@ -65,5 +53,77 @@
     padding: 1em;
     display: flex;
     flex-direction: column;
+}
+
+.completed-work .name {
+    font-size: 1em;
+    font-weight: 500;
+    color: #ffc800;
+}
+
+.site-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.site-link .icon {
     font-size: 0.8em;
+    margin-right: 0.5em;
+}
+.site-link a {
+    color: lightgray;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.site-link a:hover {
+    color: #ffc800;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.completed-work:nth-child(even) {
+    border-left: 1px solid #b3a7a7;
+}
+
+.subtitle {
+    font-size: 1em;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+@media (max-width: 900px) {
+    .work-gallery-section {
+        max-width: 90vw;
+        font-size: 0.65em;
+    }
+
+    .completed-work-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .completed-work {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+
+    .completed-work:nth-child(even) {
+        border-left: none
+    }
+}
+
+@media (max-width: 400px) {
+    .site-link {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 1em;
+    }
 }
