@@ -149,6 +149,17 @@ body {
     color: #cdcdcd;
 }
 
+.btn {
+    padding: 0.5em 2em;
+    background: #ECECEC;
+    text-decoration: none;
+    color: #2F303A;
+    border-radius: 0.5em;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
 .main-nav li a:active,
 .main-nav .active {
     border-bottom: 1px solid red;

@@ -1,0 +1,92 @@
+.contact-me-section {
+    flex-grow: 1;
+    max-width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #2f344669;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-family: 'Baloo Tamma 2', sans-serif;
+}
+
+input,
+textarea {
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: transparent;
+    border: 0.001em solid #f4c90b6b;
+    color: #ECECEC;
+    font-family: 'Baloo Tamma 2', sans-serif;
+}
+
+input:focus,
+textarea:focus,
+input:active,
+textarea:active {
+    border-radius: 0.5em;
+    border: 0.001em solid #f4c90b6b;
+}
+
+.contact-details input {
+    width: 32%;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.subject input {
+    width: 100%;
+}
+
+.subject {
+    margin-top: 2em;
+}
+
+.message textarea {
+    width: 100%;
+}
+
+.message {
+    margin-top: 2em;
+}
+
+.button-section {
+    margin-top: 2em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .contact-me-section {
+        max-width: 90vw;
+        font-size: 0.65em;
+    }
+
+    .contact-details input {
+        width: 100%;
+    }
+
+    .contact-details input:not(:first-of-type) {
+        margin-top: 1.5em;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 2em;
+    }
+}

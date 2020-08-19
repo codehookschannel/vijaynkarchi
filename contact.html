@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./assets/css/journey.css">
-    <title>Vijay N K - My WOrk Journey</title>
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <title>Vijay N K - About Me</title>
 </head>
 
 <body class="container">
@@ -51,6 +51,7 @@
             <span class="skill">CSS</span>
             <span class="skill">JavaScript</span>
             <span class="skill">Angular</span>
+            <span class="skill">RxJs</span>
             <span class="skill">Java</span>
             <span class="skill">Spring</span>
             <span class="skill">Spring Boot</span>
@@ -65,7 +66,8 @@
         <div class="skills-tools-section">
             <span class="skill">React Js</span>
             <span class="skill">Go Lang</span>
-            <span class="skill">D3 JS</span>
+            <span class="skill">d3 JS</span>
+            <span class="skill">Redux</span>
         </div>
 
         <!-- Tools -->
@@ -78,65 +80,46 @@
             <span class="tool">SVN</span>
         </div>
     </section>
-    <section id="journey" class="content-section">
-        <header class="header">
+    <section id="contact"  class="content-section">
+        <div class="header">
             <nav class="main-nav">
                 <ul>
                     <li>
-                        <a href="./index.html" class="nav-link">About Me</a>
+                        <a href="/" class="nav-link">About Me</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="./journey.html#journey" class="nav-link">Journey</a>
                     </li>
                     <li>
                         <a href="./work-gallery.html#work-gallery" class="nav-link">Work Gallery</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./contact.html#contact" class="nav-link">Contact Me</a>
                     </li>
                 </ul>
             </nav>
-        </header>
-        <section class="journey-section">
-            <span class="title">My Work Journey</span>
-            <span class="subtitle">Here I listed the companies I have worked with and the responsibilities I have handled with that company.</span>
-            <div class="journey-box">
-                <div class="vertical-train">
-                    <div class="circle">2</div>
-                    <div class="line"></div>
+        </div>
+        <section class="contact-me-section">
+            <span class="title">Contact Me</span>
+            <form action="https://mailthis.to/codehookschannel@gmail.com" method="POST" encType="multipart/form-data">
+                <div class="contact-details">
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="text" name="phoneNo" placeholder="Phone Number">
+                    <input type="email" name="_replyto" placeholder="Your email">
                 </div>
-                <div class="content">
-                    <span class="title from-to"> Sept, 2019 to Present</span>
-                    <span class="subtitle company-name">Consultant at RIA Advisory.</span>
-                    <div class="responsibility">
-                        <ul>
-                            <li>Writing the applications using Angular 8/9, Spring Boot, MongoDB.</li>
-                            <li>Reviewing the code written by other developers.</li>
-                            <li>Defining the project layout.</li>
-                            <li>Working on Docker most of the time and some time on PCF.</li>
-                        </ul>
-                    </div>
+                <div class="subject">
+                    <input type="text" name="_subject" placeholder="Subject">
                 </div>
-            </div>
-            <div class="journey-box">
-                <div class="vertical-train">
-                    <div class="circle">1</div>
-                    <div class="line"></div>
+                <div class="message">
+                    <textarea rows="10" name="message" placeholder="Enter your message here"></textarea>
                 </div>
-                <div class="content">
-                    <span class="title from-to"> Jun, 2016 to Sept, 2019</span>
-                    <span class="subtitle company-name">Associate Consultant at USIT Pvt Ltd.</span>
-                    <div class="responsibility">
-                        <ul>
-                            <li>Writing Java code and unit tests.</li>
-                            <li>Front End design using HTML5/ZK and Angular 2+ Framework.</li>
-                            <li>Designing the 2D and 3D layouts using Three.js library</li>
-                            <li>Designed the Database for simple modules.</li>
-                            <li>Designed Dashboard using ChartJs, Angular 4, Spring Boot.</li>
-                        </ul>
-                    </div>
+                <div class="button-section">
+                    <input type="hidden" name="_after" value="https://codehookschannel.github.io/vijaynkarchi/contact.html">
+                    <input type="hidden" name="_honeypot" value="">
+                    <input type="hidden" name="_confirmation" value="">
+                    <input class="btn"  type="submit" value="Submit">
                 </div>
-            </div>
+            </form>
         </section>
     </section>
 

@@ -14,16 +14,6 @@
     margin-top: 3em;
 }
 
-
-.btn {
-    padding: 0.5em 2em;
-    background: #ECECEC;
-    text-decoration: none;
-    color: #2F303A;
-    border-radius: 0.5em;
-    font-weight: 500;
-}
-
 @media (max-width: 900px) {
     .about-me-section {
         max-width: 90vw;
