@@ -13,6 +13,8 @@
 
 .button-section {
     margin-top: 1em;
+    display: flex;
+    justify-content: center;
 }
 
 .skill-bar-section {
@@ -23,7 +25,7 @@
 
 .frontend-skills,
 .backend-skills {
-    width: 49%;
+    width: 46%;
 }
 
 .skill-bar-container {
@@ -43,9 +45,57 @@
     border-radius: 1em 0.5em 0.5em 1em;
 }
 
-.html-css {
-    background-color: yellow;
+.skill-level-70 {
+    width: 70%;
+}
+
+.skill-level-75 {
+    width: 75%;
+}
+
+.skill-level-80 {
     width: 80%;
+}
+
+.skill-level-85 {
+    width: 85%;
+}
+
+.skill-level-90 {
+    width: 90%;
+}
+
+.skill-level-95 {
+    width: 95%;
+}
+
+.clr-70 {
+    background-color: #FBC02D;
+    color: black;
+}
+
+.clr-75 {
+    background-color: #FFEE58;
+    color: black;
+}
+
+.clr-80 {
+    background-color: #CDDC39;
+    color: black;
+}
+
+.clr-85 {
+    background-color: #7CB342;
+    color: black;
+}
+
+.clr-90 {
+    background-color: #7CB342;
+    color: black;
+}
+
+.clr-95 {
+    background-color: #64DD17;
     color: black;
 }
 
@@ -61,5 +111,17 @@
        display: flex;
        align-items: center;
        justify-content: center;
+    }
+
+    .skill-bar-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 2em;
+    }
+
+    .frontend-skills,
+    .backend-skills {
+        width: 100%;
     }
 }
