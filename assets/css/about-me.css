@@ -7,7 +7,7 @@
 }
 
 .description {
-    margin-top: 2em;
+    margin-top: 1em;
     text-align: justify;
 }
 
@@ -20,7 +20,7 @@
 .skill-bar-section {
     display: flex;
     justify-content: space-between;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .frontend-skills,
@@ -113,11 +113,15 @@
        justify-content: center;
     }
 
+    .button-section {
+        padding-bottom: 2em;
+    }
+
     .skill-bar-section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 2em;
+        margin-top: 1em;
     }
 
     .frontend-skills,

@@ -74,6 +74,18 @@ textarea:active {
         max-width: 90vw;
         font-size: 0.65em;
     }
+    input,
+    textarea {
+        border: 0.4em solid #f4c90b6b;
+    }
+
+    input:focus,
+    textarea:focus,
+    input:active,
+    textarea:active {
+        border-radius: 0.5em;
+        border: 0.4em solid #f4c90b6b;
+    }
 
     .contact-details input {
         width: 100%;
