@@ -6,9 +6,19 @@
     flex-direction: column;
 }
 
+.title {
+    animation: fontIncrease 1s;
+}
+
 .description {
     margin-top: 1em;
     text-align: justify;
+    position: relative;
+    z-index: -1;
+    animation: leftToRight 2s;
+    visibility: hidden;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .button-section {
@@ -16,6 +26,7 @@
     display: flex;
     justify-content: center;
 }
+
 
 .skill-bar-section {
     display: flex;
@@ -34,6 +45,17 @@
     height: 20px;
     background-color: #ffffff29;
     border-radius: 1em;
+    visibility: hidden;
+    animation: containerVisible 1s 4s forwards;
+}
+
+@keyframes containerVisible {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
 }
 
 .skill-bar {
@@ -46,57 +68,137 @@
 }
 
 .skill-level-70 {
-    width: 70%;
+    color: transparent;
+    animation: skillAnimation-70 2s 4s;
+    animation-fill-mode: forwards;
 }
 
 .skill-level-75 {
-    width: 75%;
+    color: transparent;
+    animation: skillAnimation-75 2s 4.2s;
+    animation-fill-mode: forwards;
 }
 
 .skill-level-80 {
-    width: 80%;
+    color: transparent;
+    animation: skillAnimation-80 2s 4.4s;
+    animation-fill-mode: forwards;
 }
 
 .skill-level-85 {
-    width: 85%;
+    color: transparent;
+    animation: skillAnimation-85 2s 4.6s;
+    animation-fill-mode: forwards;
 }
 
 .skill-level-90 {
-    width: 90%;
+    color: transparent;
+    animation: skillAnimation-90 2s 4.8s;
+    animation-fill-mode: forwards;
 }
 
 .skill-level-95 {
-    width: 95%;
+    color: transparent;
+    animation: skillAnimation-95 2s 5s;
+    animation-fill-mode: forwards;
 }
 
-.clr-70 {
-    background-color: #FBC02D;
-    color: black;
+@keyframes skillAnimation-70 {
+    0% {
+        background-color: transparent;
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        background-color: #FBC02D;
+        width: 70%;
+        color: black;
+    }
 }
 
-.clr-75 {
-    background-color: #FFEE58;
-    color: black;
+@keyframes skillAnimation-75 {
+    0% {
+        background-color: transparent;
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        background-color: #FFEE58;
+        width: 75%;
+        color: black;
+    }
 }
 
-.clr-80 {
-    background-color: #CDDC39;
-    color: black;
+@keyframes skillAnimation-80 {
+    0% {
+        background-color: transparent;
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        background-color: #CDDC39;
+        width: 80%;
+        color: black;
+    }
 }
 
-.clr-85 {
-    background-color: #7CB342;
-    color: black;
+@keyframes skillAnimation-85 {
+    0% {
+        background-color: transparent;
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        background-color: #7CB342;
+        width: 85%;
+        color: black;
+    }
 }
 
-.clr-90 {
-    background-color: #7CB342;
-    color: black;
+@keyframes skillAnimation-90 {
+    0% {
+        background-color: transparent;
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        background-color: #7CB342;
+        width: 90%;
+        color: black;
+    }
 }
 
-.clr-95 {
-    background-color: #64DD17;
-    color: black;
+@keyframes skillAnimation-95 {
+    0% {
+        background-color: transparent;
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        background-color: #64DD17;
+        width: 95%;
+        color: black;
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        visibility: visible;
+        left: -65vw;
+    }
+    100% {
+        visibility: visible;
+        left: 0;
+    }
+}
+
+@keyframes fontIncrease {
+    0% {
+        font-size: 0.5em
+    }
+    100% {
+        font-size: auto
+    }
 }
 
 
