@@ -128,4 +128,8 @@
     .backend-skills {
         width: 100%;
     }
+
+    .skill-bar span {
+        font-size: 0.8em;
+    }
 }
