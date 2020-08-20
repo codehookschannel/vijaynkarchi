@@ -76,15 +76,15 @@ textarea:active {
     }
     input,
     textarea {
-        border: 0.4em solid #f4c90b6b;
+        border: 1px solid #f4c90b6b;
     }
 
     input:focus,
     textarea:focus,
     input:active,
     textarea:active {
-        border-radius: 0.5em;
-        border: 0.4em solid #f4c90b6b;
+        border-radius: 5px;
+        border: 1px solid #f4c90b6b;
     }
 
     .contact-details input {
