@@ -30,11 +30,130 @@
     background-color: #f9dd7691;
     font-weight: 900;
     color: black;
+
+}
+.c-2 {
+    visibility: hidden;
+    animation-name: animateCircle;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.l-2 {
+    animation-name: animateLine;
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.t-2, .t-1, .st-1, .st-2, .r-1, .r-2{
+    position: relative;
+    visibility: hidden;
+}
+
+.t-2, .st-2 {
+    animation-name: animateFromToTitle;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.r-2 {
+    animation-name: animateResponsibilities;
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.c-1 {
+    visibility: hidden;
+    animation-name: animateCircle;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.l-1 {
+    animation-name: animateLine;
+    animation-duration: 1.5s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+.t-1, .st-1 {
+    animation-name: animateFromToTitle;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.r-1 {
+    animation-name: animateResponsibilities;
+    animation-duration: 1.5s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes animateResponsibilities {
+    0% {
+        opacity: 0;
+        top: -20px;
+        visibility: visible;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes animateFromToTitle {
+    0% {
+        opacity: 0;
+        top: -20px;
+        visibility: visible;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes animateCircle {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        visibility: visible;
+    }
+
+    100% {
+        visibility: visible;
+        width: 3vw;
+        height: 3vw;
+        opacity: 1;
+    }
 }
 
 .line {
     border-left: 4px solid #f9dd7691;
-    flex-grow: 1;
+}
+
+@keyframes animateLine {
+    0% {
+        flex-grow: 0;
+        visibility: visible;
+    }
+
+    100% {
+        visibility: visible;
+        flex-grow: 1;
+    }
 }
 
 .content {
@@ -70,6 +189,34 @@
 .journey-section::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background-color: transparent;
+}
+
+.journey-section > .title,
+.journey-section > .subtitle {
+    position: relative;
+    animation-name: titleAnimation;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.journey-section > .subtitle {
+    animation-delay: 1.5s;
+}
+
+@keyframes titleAnimation {
+    0% {
+        opacity: 0;
+        bottom: -40px;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0;
+        visibility: visible;
+    }
 }
 
 @media (max-width: 900px) {

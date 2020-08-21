@@ -25,6 +25,12 @@
     margin-top: 1em;
     display: flex;
     justify-content: center;
+    animation-name: animateBtn;
+    visibility: hidden;
+    position: relative;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -51,9 +57,11 @@
 
 @keyframes containerVisible {
     0% {
+        opacity: 0;
         visibility: visible;
     }
     100% {
+        opacity: 1;
         visibility: visible;
     }
 }
@@ -198,6 +206,20 @@
     }
     100% {
         font-size: auto
+    }
+}
+
+@keyframes animateBtn {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        bottom: -30px;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+        bottom: 0
     }
 }
 

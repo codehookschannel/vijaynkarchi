@@ -101,6 +101,45 @@
         margin-top: 1em;
 }
 
+.work-gallery-section > p,
+.title,
+.currently-working-section,
+.completed-work-section {
+    animation: para 1s forwards;
+    position: relative;
+    visibility: hidden;
+}
+
+.title {
+    animation-delay: 1s;
+}
+
+.currently-working-section {
+    animation-delay: 1.5s;
+}
+
+.completed {
+    animation-delay: 2.5s;
+}
+
+.completed-work-section {
+    animation-delay: 3s;
+}
+
+
+@keyframes para {
+    0% {
+        visibility: visible;
+       opacity: 0;
+       top: -10px;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        top: 0;
+    }
+}
+
 @media (max-width: 900px) {
     .work-gallery-section {
         max-width: 90vw;
