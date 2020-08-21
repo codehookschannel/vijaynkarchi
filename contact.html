@@ -78,6 +78,7 @@
             <span class="tool">Web Storm</span>
             <span class="tool">Git</span>
             <span class="tool">SVN</span>
+            <span class="tool">JIRA</span>
         </div>
     </section>
     <section id="contact"  class="content-section">
@@ -103,15 +104,15 @@
             <span class="title">Contact Me</span>
             <form action="https://mailthis.to/codehookschannel@gmail.com" method="POST" encType="multipart/form-data">
                 <div class="contact-details">
-                    <input type="text" name="name" placeholder="Your name">
-                    <input type="text" name="phoneNo" placeholder="Phone Number">
-                    <input type="email" name="_replyto" placeholder="Your email">
+                    <input type="text" name="name" placeholder="Your name" autocomplete="off" required>
+                    <input type="text" name="phoneNo" placeholder="Phone Number" autocomplete="off" required>
+                    <input type="email" name="_replyto" placeholder="Your email" autocomplete="off" required>
                 </div>
                 <div class="subject">
-                    <input type="text" name="_subject" placeholder="Subject">
+                    <input type="text" name="_subject" placeholder="Subject" autocomplete="off" required>
                 </div>
                 <div class="message">
-                    <textarea rows="10" name="message" placeholder="Enter your message here"></textarea>
+                    <textarea rows="10" name="message" placeholder="Enter your message here" required></textarea>
                 </div>
                 <div class="button-section">
                     <input type="hidden" name="_after" value="https://codehookschannel.github.io/vijaynkarchi/contact.html">
